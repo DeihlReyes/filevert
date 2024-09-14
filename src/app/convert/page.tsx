@@ -473,7 +473,7 @@ export default function ConvertPage() {
                 )}
               </div>
             ))}
-            <div className="flex w-full justify-end space-x-4">
+            <div className="flex w-full flex-col justify-end space-y-4 md:flex-row md:space-x-4 md:space-y-0">
               <Button
                 size="lg"
                 className="text-md relative flex items-center gap-2 rounded-xl py-4 font-semibold"
@@ -499,7 +499,7 @@ export default function ConvertPage() {
   };
 
   return (
-    <div className="mx-auto h-full max-w-7xl space-y-10 py-20">
+    <div className="mx-auto h-full max-w-7xl space-y-10 px-8 py-20 lg:px-0">
       <div className="space-y-4 text-center">
         <h1 className="text-4xl font-bold tracking-tight">
           Convert Your Files

@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FileIcon, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ModeToggle";
-import { cn } from "@/lib/utils";
+import logo from "@/assets/FileVert.png";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -19,15 +19,14 @@ const navItems = [
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
-    <nav className="border-b">
+    <nav className="sticky top-0 border-b bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <FileIcon className="h-8 w-8 text-primary" />
+              <Image src={logo} alt="Logo" width={40} height={40} />
               <span className="ml-2 text-xl font-bold">Filevert</span>
             </Link>
           </div>
@@ -51,9 +50,6 @@ export default function Navbar() {
             <ModeToggle />
           </div>
           <div className="flex items-center lg:hidden">
-            <Button asChild>
-              <Link href="/convert">Try for Free</Link>
-            </Button>
             <ModeToggle />
             <Button
               variant="outline"
@@ -79,12 +75,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={cn(
-                  "block rounded-lg px-3 py-2 text-base font-medium",
-                  pathname === item.href
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:bg-accent hover:text-accent-foreground",
-                )}
+                className="block rounded-lg px-3 py-2 text-base font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}

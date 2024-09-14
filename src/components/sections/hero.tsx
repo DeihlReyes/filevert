@@ -25,8 +25,8 @@ export default function HeroSection() {
         <Image
           src={hero}
           alt="File Converter Interface"
-          width={500}
-          height={400}
+          width={600}
+          height={500}
         />
       </div>
     </section>

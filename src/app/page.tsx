@@ -9,7 +9,7 @@ import FaqsSection from "@/components/sections/faqs";
 
 export default function Home() {
   return (
-    <div className="space-y-20">
+    <div>
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />
