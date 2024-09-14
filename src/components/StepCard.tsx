@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 // Type for StepCard props
 interface StepCardProps {
@@ -16,12 +11,12 @@ export function StepCard({ number, title, description }: StepCardProps) {
   return (
     <Card>
       <CardHeader>
-        <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-2xl font-bold text-primary-foreground">
           {number}
         </div>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
       </CardHeader>
+      <CardContent className="text-muted-foreground">{description}</CardContent>
     </Card>
   );
 }

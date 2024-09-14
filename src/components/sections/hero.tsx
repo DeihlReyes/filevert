@@ -13,7 +13,7 @@ export default function HeroSection() {
         Transform video, image, and audio files effortlessly. Our advanced
         conversion technology ensures top-quality results every time.
       </p>
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-col justify-center gap-4 md:flex-row">
         <Button asChild size="lg">
           <Link href="/convert">Start Converting Now</Link>
         </Button>

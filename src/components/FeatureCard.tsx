@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 // Type for FeatureCard props
 interface FeatureCardProps {
@@ -18,8 +13,8 @@ export function FeatureCard({ icon, title, description }: FeatureCardProps) {
       <CardHeader>
         <div className="mb-4 text-primary">{icon}</div>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
       </CardHeader>
+      <CardContent className="text-muted-foreground">{description}</CardContent>
     </Card>
   );
 }
