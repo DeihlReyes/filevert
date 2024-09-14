@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BenefitsSection() {
   return (
-    <section className="px-8 py-20 lg:px-0">
+    <section id="benefits" className="px-8 py-20 lg:px-0">
       <div className="mx-auto max-w-7xl">
         <h2 className="mb-12 text-center text-3xl font-bold">
           Why Choose Our File Converter?
