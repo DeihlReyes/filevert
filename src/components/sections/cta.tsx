@@ -7,7 +7,7 @@ export default function CallToActionSection() {
   return (
     <section className="bg-primary px-8 py-20 text-primary-foreground lg:px-0">
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="mb-6 text-3xl font-bold">
+        <h2 className="mb-6 text-2xl font-bold md:text-3xl">
           Ready to Convert Your Files?
         </h2>
         <p className="mx-auto mb-8 max-w-2xl text-xl">

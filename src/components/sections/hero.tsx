@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="mx-auto max-w-7xl space-y-6 px-8 py-20 text-center lg:px-0">
-      <h1 className="text-5xl font-extrabold tracking-tight">
+      <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
         Convert Your Files with Ease and Precision
       </h1>
-      <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
+      <p className="mx-auto max-w-2xl text-muted-foreground md:text-xl">
         Transform video, image, and audio files effortlessly. Our advanced
         conversion technology ensures top-quality results every time.
       </p>

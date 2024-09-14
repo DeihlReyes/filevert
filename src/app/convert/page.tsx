@@ -501,10 +501,10 @@ export default function ConvertPage() {
   return (
     <div className="mx-auto h-full max-w-7xl space-y-10 px-8 py-20 lg:px-0">
       <div className="space-y-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tight">
+        <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
           Convert Your Files
         </h1>
-        <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
+        <p className="mx-auto max-w-2xl text-muted-foreground md:text-xl">
           Transform your files quickly and easily. Support for video, audio, and
           image formats.
         </p>
@@ -529,7 +529,7 @@ export default function ConvertPage() {
                 {index + 1}
               </span>
               <span
-                className={`ml-2 text-sm font-medium ${
+                className={`ml-2 hidden text-sm font-medium md:block ${
                   step > index + 1
                     ? "text-primary"
                     : step === index + 1

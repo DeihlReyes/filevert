@@ -9,7 +9,7 @@ export default function FaqsSection() {
   return (
     <section id="faqs" className="bg-muted px-8 py-20 lg:px-0">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-12 text-center text-3xl font-bold">
+        <h2 className="mb-12 text-center text-2xl font-bold md:text-3xl">
           Frequently Asked Questions
         </h2>
         <Accordion

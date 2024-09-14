@@ -6,7 +6,7 @@ export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="px-8 py-20 lg:px-0">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mb-12 text-center text-3xl font-bold">
+        <h2 className="mb-12 text-center text-2xl font-bold md:text-3xl">
           What Our Users Say
         </h2>
         <div className="grid gap-8 lg:grid-cols-3">
